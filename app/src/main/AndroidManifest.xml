@@ -12,6 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FireBase"
         tools:targetApi="31">
+        <service
+            android:name=".MyFirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".BaseRealActivity"
+            android:exported="false"
+            android:label="@string/title_activity_mensajeria"
+            android:theme="@style/Theme.FireBase" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_base_real"
+            android:theme="@style/Theme.FireBase" />
         <activity
             android:name=".HomeActivity"
             android:exported="true"
@@ -23,7 +42,7 @@
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.FireBase" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".MensajeriaActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.FireBase">

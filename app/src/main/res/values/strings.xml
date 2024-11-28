@@ -2,4 +2,6 @@
     <string name="app_name">FireBase</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_base_real">BaseRealActivity</string>
+    <string name="title_activity_mensajeria">MensajeriaActivity</string>
 </resources>
